@@ -1,0 +1,9 @@
+- id: buf-lint
+  name: Lint Protobuf files
+  description: Runs `buf lint` on your Protobuf project
+  language: golang
+  types:
+    - proto
+  entry: buf
+  args:
+    - lint
