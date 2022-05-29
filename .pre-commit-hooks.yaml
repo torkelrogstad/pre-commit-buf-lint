@@ -1,9 +1,9 @@
 - id: buf-lint
   name: Lint Protobuf files
   description: Runs `buf lint` on your Protobuf project
-  language: golang
+  language: docker_image
   types:
     - proto
-  entry: buf
+  entry: bufbuild/buf:1.4.0
   args:
     - lint
